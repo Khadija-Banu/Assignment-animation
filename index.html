@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+body{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    background: #FFFFFF;
+        }
+
+.img{
+    position: absolute;
+    width: 646px;
+    height: 578px;
+    left: 641px;
+    top: 161px;
+    animation: example-img 5s ;
+    animation-delay: 26s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+        }
+  
+   @keyframes example-img {
+from{
+    left: 641px;  
+}
+to{
+    left: 1440px;
+    opacity: 0.1;
+}
+}
+
+.box-3{
+        position: absolute;
+        top:280px;
+        height: 70px;
+        width: 500px;
+        left: 100px;          
+        overflow: hidden; 
+        }
+.box-2{
+        position: absolute;
+        top: 350px;
+        height: 120px;
+        width: 500px;
+        left: 100px;          
+        overflow: hidden;        
+        }
+.box-1{ 
+        position: absolute;
+        top: 500px;
+        height: 80px;
+        width: 500px;
+        left: 100px;          
+        overflow: hidden;         
+       }
+
+#become{
+        position: absolute;
+        width: 231px;
+        height: 56px;
+        left: 68px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: #444444;
+        }
+#ninja{
+        position: absolute;
+        width: 392px;
+        height: 122px;
+        left: 68px;
+        top: 70px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 104px;
+        line-height: 122px;
+        color: #444444;
+        }    
+.btn{
+        position: absolute;
+        width: 179px;
+        height: 48px;
+        left: 68px;
+        top: 230px;
+        } 
+.btn-ani{
+        animation: example-btn 5s ;
+        animation-fill-mode: both;
+        animation-delay: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+         }
+
+@keyframes example-btn {
+        from{
+            top: 0;
+            }
+        to{
+            top: 130px;
+            opacity: 0.1;
+            }
+        }
+.nin-ani{
+        animation: example-btn2 5s ;
+        animation-fill-mode: both;
+        animation-delay: 22s; 
+        animation-direction: alternate; 
+        }
+
+@keyframes example-btn2 {
+        from{
+             top: 0px;
+            }
+        to{
+            top: 180px;
+            opacity: 0.1;
+          }
+        }
+.be-ani{
+        animation: example-btn3 5s ;
+        animation-fill-mode: both;
+        animation-delay: 24s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; 
+        }
+   @keyframes example-btn3 {
+        from{
+            top: 0px;
+            }
+        to{
+            top: 100px;
+            opacity: 0.1;
+          }
+        }
+#vector-1{
+        position: absolute;
+        width: 634.65px;
+        height: 621.84px;
+        left: 1113.53px;
+        top: -445px;
+        background: rgba(0, 172, 241, 0.25);
+        filter: blur(50px);
+        transform: rotate(41.92deg);
+        }
+
+#vector-2{
+        position: absolute;
+        width: 518.58px;
+        height: 560.62px;
+        left: 1113.53px;
+        top: 653px;
+        background: rgba(142, 109, 252, 0.25);
+        filter: blur(50px);
+        transform: rotate(-3.46deg);
+        }
+#vector-3{
+        position: absolute;
+        width: 592.11px;
+        height: 631.65px;
+        left: -524px;
+        top: 252.45px;
+        background: rgba(12, 249, 187, 0.25);
+        filter: blur(50px);
+        transform: rotate(-3.46deg);
+        }
+    .form{
+        position: relative;
+        left: 20%;
+        top: 650.44px;
+        width: 800px;
+       
+        height: 200px;
+        overflow: hidden;
+        /* transform:rotate(-45deg) */
+        }
+.circle{     
+        position: relative;
+        width: 700px;
+        height: 700px;
+        top: 50px;
+        left: 6%;
+        border-radius: 50%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 26px;
+        line-height: 22px;
+        }
+ 
+.text{     
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: anim 20s  reverse ;
+        animation-timing-function: linear;
+        /* animation: anim 20s  normal;      */
+    }
+.text span{   
+        position: absolute;   
+        left: 50%;
+        transform-origin:0 350px;  
+        }
+    @keyframes anim{
+            0%{
+                transform: rotate(0);
+              }
+            100%{
+                transform: rotate(360deg)
+                }      
+            }
+
+   
+    </style>
+</head>
+<body>
+    <main>
+        <section>           
+            <div class="ninja-box">
+                <div class="box-3" >
+                    <h1 class="be-ani" id="become">Become A</h1>
+                </div>
+              <div class="box-2" >
+                <h2 class="nin-ani" id="ninja">JS Ninja</h2>    
+              </div>   
+              <div class="box-1 " >
+                <button type="button" class="btn-ani btn btn-primary">Kill the web</button>
+              </div>     
+               
+            </div>
+            <div > 
+                <img class="img" src="Image/hero-image.png" alt="" srcset="">
+                
+            </div>
+            <div class="form">
+                <div class="circle">
+                    <div class="text">
+                 <p >REACT NODE CSS Next Express HTML</p>
+                </div>
+            </div>
+         
+
+        </div>
+        </section>
+
+        <section>
+            
+            <div id="vector-1"></div>
+            <div id="vector-2"></div>
+            <div id="vector-3"></div>
+        </section>
+    </main>
+  
+    <script >
+
+        const text=document.querySelector(".text p");
+        text.innerHTML=text.innerText.split('').map(
+            (char,i)=>
+            `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
+        ).join('');
+
+    </script> 
+</body>
+</html>
