@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ninja</title> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,17 @@ body{
     background: #FFFFFF;
         }
 
+/* image animation */
 .img{
     position: absolute;
     width: 646px;
     height: 578px;
     left: 641px;
     top: 161px;
-    animation: example-img 5s ;
-    animation-delay: 26s;
+    animation: example-img 1s ;
+    animation-delay: 12s;
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
     animation-direction: alternate;  
         }
   
@@ -36,11 +37,12 @@ from{
     left: 641px;  
 }
 to{
-    left: 1440px;
+    left: 1240px;
     opacity: 0.1;
 }
 }
 
+/* left side text box design */
 .box-3{
         position: absolute;
         top:280px;
@@ -66,6 +68,7 @@ to{
         overflow: hidden;         
        }
 
+/* Become text design */
 #become{
         position: absolute;
         width: 231px;
@@ -78,6 +81,8 @@ to{
         line-height: 56px;
         color: #444444;
         }
+        
+ /* Ninja text design */
 #ninja{
         position: absolute;
         width: 392px;
@@ -90,19 +95,28 @@ to{
         font-size: 104px;
         line-height: 122px;
         color: #444444;
-        }    
-.btn{
+        }  
+
+/* Button design */
+.button{
         position: absolute;
         width: 179px;
         height: 48px;
         left: 68px;
         top: 230px;
+        font-size: 20px;
+        color: #FFFFFF;
+        border-radius: 10px;
+        border-color: rgb(30, 126, 236);
+        background-color: rgb(30, 126, 236);
         } 
+
+/* Button animation */
 .btn-ani{
         animation: example-btn 5s ;
         animation-fill-mode: both;
-        animation-delay: 20s;
-        animation-iteration-count: infinite;
+        animation-delay: 6s;
+        animation-iteration-count: 2;
         animation-direction: alternate; 
          }
 
@@ -111,14 +125,17 @@ to{
             top: 0;
             }
         to{
-            top: 130px;
+            top: 110px;
             opacity: 0.1;
             }
         }
+
+/* Ninja animation */
 .nin-ani{
         animation: example-btn2 5s ;
         animation-fill-mode: both;
-        animation-delay: 22s; 
+        animation-delay: 8s; 
+        animation-iteration-count: 2;
         animation-direction: alternate; 
         }
 
@@ -127,15 +144,17 @@ to{
              top: 0px;
             }
         to{
-            top: 180px;
+            top: 170px;
             opacity: 0.1;
           }
         }
+
+/* Become text animation */
 .be-ani{
         animation: example-btn3 5s ;
         animation-fill-mode: both;
-        animation-delay: 24s;
-        animation-iteration-count: infinite;
+        animation-delay: 10s;
+        animation-iteration-count: 2;
         animation-direction: alternate; 
         }
    @keyframes example-btn3 {
@@ -147,6 +166,8 @@ to{
             opacity: 0.1;
           }
         }
+        
+/* Top right corner color design */
 #vector-1{
         position: absolute;
         width: 634.65px;
@@ -158,6 +179,7 @@ to{
         transform: rotate(41.92deg);
         }
 
+/* Bottom right corner color design */
 #vector-2{
         position: absolute;
         width: 518.58px;
@@ -168,6 +190,8 @@ to{
         filter: blur(50px);
         transform: rotate(-3.46deg);
         }
+
+/* Left side color design */
 #vector-3{
         position: absolute;
         width: 592.11px;
@@ -178,16 +202,18 @@ to{
         filter: blur(50px);
         transform: rotate(-3.46deg);
         }
+
+/* Bottom text design */
     .form{
         position: relative;
         left: 20%;
         top: 650.44px;
-        width: 800px;
-       
+        width: 800px;      
         height: 200px;
-        overflow: hidden;
-        /* transform:rotate(-45deg) */
+        overflow: hidden;     
         }
+
+/* Bottom rounded text design */
 .circle{     
         position: relative;
         width: 700px;
@@ -201,15 +227,17 @@ to{
         font-size: 26px;
         line-height: 22px;
         }
- 
+
+ /* Rounded text animation */
 .text{     
         position: absolute;
         width: 100%;
         height: 100%;
         animation: anim 20s  reverse ;
         animation-timing-function: linear;
-        /* animation: anim 20s  normal;      */
+        animation-iteration-count: infinite;
     }
+
 .text span{   
         position: absolute;   
         left: 50%;
@@ -223,13 +251,19 @@ to{
                 transform: rotate(360deg)
                 }      
             }
-
-   
     </style>
 </head>
 <body>
     <main>
-        <section>           
+         <!-- Background color div -->
+        <section> 
+            <div id="vector-1"></div>
+            <div id="vector-2"></div>
+            <div id="vector-3"></div>
+        </section>
+
+        <section>            
+            <!-- left side text box -->
             <div class="ninja-box">
                 <div class="box-3" >
                     <h1 class="be-ani" id="become">Become A</h1>
@@ -238,41 +272,33 @@ to{
                 <h2 class="nin-ani" id="ninja">JS Ninja</h2>    
               </div>   
               <div class="box-1 " >
-                <button type="button" class="btn-ani btn btn-primary">Kill the web</button>
-              </div>     
-               
+                <button type="button" class="btn-ani button ">Kill the web</button>
+              </div>                   
             </div>
+
+            <!-- Right side image adding -->
             <div > 
-                <img class="img" src="Image/hero-image.png" alt="" srcset="">
-                
+                <img class="img" src="Image/hero-image.png" alt="" srcset="">               
             </div>
+
+            <!-- Rounded text shape -->
             <div class="form">
                 <div class="circle">
                     <div class="text">
                  <p >REACT NODE CSS Next Express HTML</p>
                 </div>
-            </div>
-         
-
+            </div>       
         </div>
-        </section>
-
-        <section>
-            
-            <div id="vector-1"></div>
-            <div id="vector-2"></div>
-            <div id="vector-3"></div>
-        </section>
+        </section>      
     </main>
-  
+ 
+    <!-- javascript section -->
     <script >
-
         const text=document.querySelector(".text p");
         text.innerHTML=text.innerText.split('').map(
             (char,i)=>
             `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
         ).join('');
-
     </script> 
 </body>
 </html>
